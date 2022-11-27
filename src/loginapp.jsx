@@ -1,6 +1,6 @@
 import './App.css';
 import SignUp from'./signup'
-import {  useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 const Loginapp =({topic,setTopic,description, setdescription,list,setList})=>{ 
   var navigate = useNavigate();
 
@@ -21,9 +21,6 @@ const Loginapp =({topic,setTopic,description, setdescription,list,setList})=>{
   return (
     <div >
      <header className='header'>Notes</header>
-     <select>
-        <option value = {"SignUp"} onClick = {()=>onSignupClick()}> Login</option>
-     </select>
     <form className="login" onSubmit={(e)=>e.preventDefault()}>
    
     <div>
