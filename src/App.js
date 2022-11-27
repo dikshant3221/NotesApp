@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-        <Route exact path ="/Login" element = {<Loginapp 
+        <Route exact path ="/" element = {<Loginapp 
         topic= {topic}
         setTopic = {setTopic}
         description= {description}
