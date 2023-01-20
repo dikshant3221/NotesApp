@@ -3,8 +3,8 @@ import { useState } from 'react';
 import Loginapp  from './loginapp.jsx';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Notes from './notes'
-import ShowList from './showList'
-import ListItem from './listItems'
+import ShowList from './showlist'
+import Signup from './signup'
 function App() {
 
   const [topic,setTopic] = useState();
@@ -27,8 +27,8 @@ function App() {
         setdescription = {setdescription}
         list= {list}
         setList = {setList}/>}/>
-        <Route exact path ="/ListItem" element = {<ListItem topic={topic} description={description}/>}/>
         <Route exact path ="/ShowList" element = {<ShowList topic={topic} description={description} />}/>
+        <Route exact path ="/Signup" element = {<Signup topic={topic} description={description} />}/>
         </Routes>
         </Router>
 

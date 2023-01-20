@@ -29,6 +29,23 @@
   border-radius: 10px;
 }
 
+.pagination{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 20%;
+  flex-direction : horizontal;
+  background-attachment: fixed;
+  color: white;
+  background-color:white;
+}
+
+.showlist{
+  display: flex;
+  align-items: center;
+  flex-direction : vertical;
+  gap: 550px;
+}
 
 /* .App-logo {
   height: 40vmin;
