@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-        <Route exact path ="/Login" element = {<Loginapp 
+        <Route  path ="/NotesApp" element = {<Loginapp 
         topic= {topic}
         setTopic = {setTopic}
         description= {description}
@@ -23,12 +23,12 @@ function App() {
         list= {list}
         setList = {setList}
         />}/>
-        <Route exact path ="/Notes" element = {<Notes topic={topic} setTopic={setTopic} description= {description}
+        <Route exact path ="/NotesApp/Notes" element = {<Notes topic={topic} setTopic={setTopic} description= {description}
         setdescription = {setdescription}
         list= {list}
         setList = {setList}/>}/>
-        <Route exact path ="/ShowList" element = {<ShowList topic={topic} description={description} />}/>
-        <Route exact path ="/Signup" element = {<Signup topic={topic} description={description} />}/>
+        <Route exact path ="/NotesApp/ShowList" element = {<ShowList topic={topic} description={description} />}/>
+        <Route exact path ="/NotesApp/Signup" element = {<Signup topic={topic} description={description} />}/>
         </Routes>
         </Router>
 
